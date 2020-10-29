@@ -1,0 +1,115 @@
+body, h1, h2{
+    padding: 0;
+    margin: 0;
+}
+
+
+.main-header {
+	/* padding-top: 20px;
+    padding-bottom: 20px; */
+    background-color: black;
+    min-height: auto;
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .button:hover,.main-nav2 a:hover, .main-nav1 a:hover {
+	color: red;
+}
+
+.main-nav1 a, .main-nav2 a {
+	font-size: .95em;
+	color: white;
+    text-transform: capitalize;
+    text-align: center;
+    justify-self: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-decoration: none;
+    
+}
+
+.main-nav1, .main-nav2{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.banner,.main-footer {
+    text-align: center;
+    
+}
+
+.banner {
+    background-color:#a72626 ;
+    display: flex;
+    height: 650px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 1.8;
+    background-image: url("img/Chicken-Shawarma-Lavash-Wrap.jpg");
+    /* padding: 35px, 10px; */
+    /* margin-top: 80px;
+	margin-bottom: 48px; */
+}
+
+
+.button {
+	color: black;
+	text-align: center;
+	padding: .625em 1.25em;
+    border-radius: .35em;
+}
+
+.main-footer {
+	background: #d9e4ea;
+	padding: 2em 0;
+	margin-top: 30px;
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===============Media Queries=================*/
+
+@media (min-width: 576px) {
+  
+    .main-nav1 {
+      float: left;
+      display: flex;
+      flex-direction:row;
+      flex-wrap:wrap;
+    }
+    .main-nav2 {
+        float: right;
+        display: flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+      }
+    }
+    nav {
+      margin-top: 24px;
+    }
+    .main-nav li {
+      display: inline-block;
+      margin: 0 0.45em;
+    }
+
