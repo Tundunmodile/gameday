@@ -3,44 +3,35 @@ body, h1, h2{
     margin: 0;
 }
 
-
-.main-nav {
-	/* padding-top: 20px;
-    padding-bottom: 20px; */
-    background-color: tomato;
-    min-height: auto;
-    display: flex;
-    justify-content: space-between;
- }
-
- .button:hover,.nav2 a:hover, .nav1 a:hover {
-	color: goldenrod;
-}
-
-.nav1 a, .nav2 a {
-	font-size: .95em;
-	color: white;
-    text-transform: capitalize;
+.square {
+    display:flex;
+    border: 10px solid white;
+    width: 30%;
+    height: 30%;
     text-align: center;
-    justify-self: center;
-    margin-left: 5px;
-    margin-right: 5px;
-    text-decoration: none;
-    
+    /* font-size: 3vh; */
+    margin: 5%;
+    padding: 5%;
 }
 
-/* .nav1, .nav2{
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-} */
+ .button:hover{
+	color:white;
+}
 
-.banner,.main-footer {
+.blackline {
+    border-bottom: black 6px solid;
+}
+
+.bg-color {
+    background-color: black;
+}
+
+.banner1,.main-footer {
     text-align: center;
-    
+    /* padding-top:60px; */
 }
 
-.banner {
+.banner1 {
     background-color:tomato ;
     display: flex;
     height: 650px;
@@ -51,10 +42,22 @@ body, h1, h2{
     background: url("img/Chicken-Shawarma-Lavash-Wrap.jpg") no-repeat center center fixed;
     background-size: cover;
     /* padding: 35px, 10px; */
-    /* margin-top: 80px;
-	margin-bottom: 48px; */
+    /* margin-top: 80px; */
 }
 
+.banner2 {
+    background-color:tomato ;
+    display: flex;
+    height: 650px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 1.8;
+    background: url("img/shawarma2.jpg") no-repeat center center fixed;
+    background-size: cover;
+    /* padding: 35px, 10px; */
+    /* margin-top: 80px; */
+}
 
 .button {
 	color: white;
