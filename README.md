@@ -1,5 +1,5 @@
-Priject Description:
-Simple website to order shawarma
+Project Description:
+This website is for a food delivery service to place orders for shawarmas
 
 Features included:
 CSS Feature

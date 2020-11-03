@@ -106,9 +106,7 @@ body, h1, h2{
         flex-wrap:wrap;
       }
     }
-    nav {
-      margin-top: 24px;
-    }
+    
     .main-nav li {
       display: inline-block;
       margin: 0 0.45em;
