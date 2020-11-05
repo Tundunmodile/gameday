@@ -4,15 +4,24 @@ body, h1, h2{
 }
 
 .square {
-    display:flex;
-    border: 10px solid white;
-    width: 30%;
-    height: 30%;
-    text-align: center;
-    /* font-size: 3vh; */
+    position: relative;
+    border: 5px solid white;
+    width: 20%;
     margin: 5%;
-    padding: 5%;
 }
+
+.square:after {
+    content:"";
+    display: block;
+    padding: 30%;
+}
+
+.content {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+  }
 
  .button:hover{
 	color:white;
@@ -55,8 +64,17 @@ body, h1, h2{
     line-height: 1.8;
     background: url("img/shawarma2.jpg") no-repeat center center fixed;
     background-size: cover;
-    /* padding: 35px, 10px; */
-    /* margin-top: 80px; */
+}
+
+.banner3 {
+    background-color: black;
+    display: flex;
+    height: 650px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 1.8;
+    background-size: cover;
 }
 
 .button {
