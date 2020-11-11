@@ -31,6 +31,10 @@ body, h1, h2{
     border-bottom: black 6px solid;
 }
 
+.blacklinetop {
+    border-top: black 6px solid;
+}
+
 .bg-color {
     background-color: black;
 }
@@ -104,32 +108,33 @@ body, h1, h2{
 
 
 
+/*-------------------------------------- Media Queries-----------------------------------------------*/
 
+/* Target viewport sizes 576px*/
 
+@media (min-width: 320px) {
 
-
-
-
-/* ===============Media Queries=================*/
-
-@media (min-width: 576px) {
-  
-    .main-nav1 {
-      float: left;
-      display: flex;
-      flex-direction:row;
-      flex-wrap:wrap;
-    }
-    .main-nav2 {
-        float: right;
-        display: flex;
-        flex-direction:row;
-        flex-wrap:wrap;
+    nav {
+        margin-top: 24px;
       }
-    }
-    
-    .main-nav li {
+  
+    nav li{
       display: inline-block;
       margin: 0 0.45em;
     }
 
+    h2 {
+        margin-bottom: 1.5em;
+      }
+
+}
+
+/* Target viewport sizes 768px and wider */
+
+@media (min-width: 768px) {
+    .imgflex {
+        display: flex;
+        flex-direction: row;
+        width:500px;
+    }
+}
