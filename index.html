@@ -79,33 +79,22 @@
    <div class="container text-center">
         <h2 class="text-light bg-color">Reservations</h2>
         <h1>MAKE A GAMEDAY RESERVATION</h1>
+       
         <!-- Reservation form -->
-        <form>
-        <div class="form-group">
-            <label>Date</label>
-            <select class="form-control" id="Selectdate" placeholder="Date">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </select>
+        <form >
+        <div class="form-group form-row">
+            <label for="reservation date" class="col-form-label">Date</label>
+            <input type="date" class="form-control" id="reservationdate">
 
-            <label>Time</label>
-            <select class="form-control" id="Selecttime" placeholder="Time">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </select>
+            <label for="reservation time" class="col-form-label">Time</label>
+            <input type="time" class="form-control" id="reservationtime">
 
-            <label for="exampleFormControlInput1">Email address</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            <label for="party size" class="col-form-label">Party Size</label>
+            <input type="number" class="form-control" id="Party Size">
         </div>
+        <button type="submit" id="booknow" class="btn btn-outline-danger btn-block mb-5">Book Now</button>
         </form>
         <!-- Reservation form -->
-        <button id="booknow" class="btn btn-outline-danger button">Book Now</button>
    </div>
 
    <div class="container text-center">
@@ -119,7 +108,7 @@
         Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi 
         consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
         vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
-    <button type="button" class="btn btn-outline-danger button" data-toggle="modal" data-target="#contactUs">Contact Us</button>
+    <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#contactUs">Contact Us</button>
    </div>
    
    <div class="banner3">
@@ -153,13 +142,16 @@
           </button>
         </div>
         <div class="modal-body">
-          <!-- ...Contact US Form -->
+          
+            <!-- ...Contact US Form -->
             <form role="form" id="newModalForm">
                 <div class="row">
                     <div class="col">
+                        <label for="firstname" class="sr-only"> First Name</label>
                         <input type="text" class="form-control" id="firstname" placeholder="First name">
                     </div>
                     <div class="col">
+                        <label for="lastname" class="sr-only"> Last Name</label>
                         <input type="text" class="form-control" id="lastname" placeholder="Last name">
                     </div>
                 </div>
@@ -172,12 +164,12 @@
                 </div> -->
 
                 <div class="form-group">
-                    <label for="exampleFormControlInput1"></label>
+                    <label for="emailaddress" class="sr-only">Email Address</label>
                     <input type="email" class="form-control" id="email" placeholder="Email Address">
                   </div>
 
                 <div class="form-group">
-                    <label for="exampleFormControlTextarea1"></label>
+                    <label for="Textarea" class="sr-only"></label>
                     <textarea class="form-control" id="message" placeholder="Type your message here" rows="5"></textarea>
                 </div>
                 

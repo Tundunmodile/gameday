@@ -114,7 +114,7 @@ body, h1, h2{
 
 @media (min-width: 320px) {
 
-    nav {
+    /* nav {
         margin-top: 24px;
       }
   
@@ -125,16 +125,26 @@ body, h1, h2{
 
     h2 {
         margin-bottom: 1.5em;
-      }
+      } */
 
 }
 
 /* Target viewport sizes 768px and wider */
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
     .imgflex {
         display: flex;
         flex-direction: row;
         width:500px;
+    }
+} */
+
+/* Target viewport sizes 576px and wider */
+
+@media (min-width: 576px) {
+    .formflex{
+        display:flex;
+        width: auto;
+        
     }
 }
