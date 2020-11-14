@@ -14,12 +14,21 @@ function emailValidationResult(val){
         return val;
     }
 }
+
+function validateText(val, min_length){
+    if(val.length <= min_length){
+        alert('Please enter a valid field')
+    }
+    else{
+        return val;
+    }
+}
 //submit contact us form
 $('#contactUs').on('click', '#submitContactUs', function(){
-    var firstname = $('#firstname').val();
-    var lastname = $('#lastname').val();
+    var firstname = validateText($('#firstname').val(), 2);
+    var lastname = validateText($('#lastname').val(), 2);
     var email = emailValidationResult($('#email').val());
-    var messageVal = $('#message').val();
+    var messageVal = validateText($('#message').val(), 5);
 
     var message = {firstname, lastname, email, messageVal};
     console.log(message);

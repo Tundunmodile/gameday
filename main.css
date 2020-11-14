@@ -3,19 +3,6 @@ body, h1, h2{
     margin: 0;
 }
 
-.square {
-    position: relative;
-    border: 5px solid white;
-    width: 20%;
-    margin: 5%;
-}
-
-.square:after {
-    content:"";
-    display: block;
-    padding: 30%;
-}
-
 .content {
     position: absolute;
     text-align: center;
@@ -23,8 +10,8 @@ body, h1, h2{
     height: 100%;
   }
 
- .button:hover{
-	color:white;
+ #menu:hover{
+	background-color:black;
 }
 
 .blackline {
@@ -79,6 +66,17 @@ body, h1, h2{
     flex-direction: column;
     line-height: 1.8;
     background-size: cover;
+    background: no-repeat center center fixed
+}
+
+#menubanner {
+    background-color:black ;
+    margin:auto 10px;
+    width: auto;
+    height: 2000px;
+
+
+
 }
 
 .button {
@@ -131,13 +129,14 @@ body, h1, h2{
 
 /* Target viewport sizes 768px and wider */
 
-/* @media (min-width: 768px) {
+@media (min-width: 1024px) {
     .imgflex {
         display: flex;
         flex-direction: row;
         width:500px;
+        max-width:50%;
     }
-} */
+}
 
 /* Target viewport sizes 576px and wider */
 

@@ -9,7 +9,7 @@
 
 </head>
 <body>
-    <nav class="navbar navbar-dark navbar-expand-md bg-color justify-content-center">
+    <nav class="navbar sticky-top navbar-dark navbar-expand-md bg-color justify-content-center">
         <a href="/" class="navbar-brand d-flex w-50 mr-auto">GDS</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
             <span class="navbar-toggler-icon"></span>
@@ -17,27 +17,27 @@
         <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
             <ul class="navbar-nav w-100 justify-content-center">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Menu</a>
+                    <a class="nav-link" href="menu.html">Menu</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Reservations</a>
+                    <a class="nav-link" href="#Reservations">Reservations</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Order Online</a>
+                    <a class="nav-link" href="orderonline.html">Order Online</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Location & Hours</a>
+                    <a class="nav-link" href="#LocNhours">Location & Hours</a>
                 </li>
             </ul>
             <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Login</a>
+                    <a class="nav-link" href="#LoginForm" data-toggle="modal" data-target="#LoginForm">Login</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Signup</a>
+                    <a class="nav-link" href="#SignUpForm">Signup</a>
                 </li>
             </ul>
         </div>
@@ -46,11 +46,12 @@
    <div class="banner1 blackline">       
         <h1 class="text-light">GameDay Shawarma</h1>
         <h2 class="text-light">Takeout & Delivery</h2>
-        <button class="btn btn-outline-danger button">Order Now</button>
+        <a href="orderonline.html"><button type="button" class="btn btn-outline-light button link">Order Now</button></a>
    </div> 
 
    <div class="container text-center">
        <h2 class="text-light bg-color">The Passion for Authentic Lagos Shawarmas</h2>
+
        <p class="lead">Sometimes all it takes is great food to jet you back and ease every nostalgic ache. That is the story of gameday shawarma 
         coupled with the absence of authentic Nigerian food in Louisville, Kentucky  </p>
        <p class="lead">"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a
@@ -69,15 +70,12 @@
    </div>
 
    <div class="banner2 blackline blacklinetop">       
-        <div class="square">
-            <div class="content text-light text-center">
-                FRESH EATS EVERYDAY <br>See our menu
-            </div>
-        </div>
+        <h1 class="text-light text-center">FRESH EATS EVERYDAY</h1>
+        <h2><a class="text-light text-center link " href="menu.html">See our menu</a></h2>
    </div> 
       
    <div class="container text-center">
-        <h2 class="text-light bg-color">Reservations</h2>
+        <h2 id="Reservations" class="text-light bg-color">Reservations</h2>
         <h1>MAKE A GAMEDAY RESERVATION</h1>
        
         <!-- Reservation form -->
@@ -92,7 +90,7 @@
             <label for="party size" class="col-form-label">Party Size</label>
             <input type="number" class="form-control" id="Party Size">
         </div>
-        <button type="submit" id="booknow" class="btn btn-outline-danger btn-block mb-5">Book Now</button>
+        <button type="submit" id="booknow" class="btn btn-dark btn-block mb-5">Book Now</button>
         </form>
         <!-- Reservation form -->
    </div>
@@ -108,16 +106,15 @@
         Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi 
         consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
         vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
-    <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#contactUs">Contact Us</button>
+    <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#contactUs">Contact Us</button>
    </div>
    
    <div class="banner3">
-       <h1>COME GRAB A WRAP!!</h1>
+       <h1 id="LocNhours">COME GRAB A WRAP!!</h1>
        <p>4001 Jett Lane <br> Gardena, CA 90247</p>
        <p></p>
        Tel:310-704-6698
    </div>
-
 
     <!-- Footer -->
    <footer class="main-footer">
@@ -126,63 +123,6 @@
    </footer>
     <!-- Footer -->
 
-   <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactUs">
-    Launch demo modal
-  </button>
-  
-  <!-- Modal -->
-  <div class="modal fade" id="contactUs" tabindex="-1" aria-labelledby="contact us form" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Contact Us</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          
-            <!-- ...Contact US Form -->
-            <form role="form" id="newModalForm">
-                <div class="row">
-                    <div class="col">
-                        <label for="firstname" class="sr-only"> First Name</label>
-                        <input type="text" class="form-control" id="firstname" placeholder="First name">
-                    </div>
-                    <div class="col">
-                        <label for="lastname" class="sr-only"> Last Name</label>
-                        <input type="text" class="form-control" id="lastname" placeholder="Last name">
-                    </div>
-                </div>
-                
-                <!-- <div class="form-group row">
-                    <label for="inputEmail3" class="col-sm-2 col-form-label"></label>
-                    <div class="col-sm-12">
-                      <input type="email" class="form-control" id="inputEmail3" placeholder="Email Address">
-                    </div>
-                </div> -->
-
-                <div class="form-group">
-                    <label for="emailaddress" class="sr-only">Email Address</label>
-                    <input type="email" class="form-control" id="email" placeholder="Email Address">
-                  </div>
-
-                <div class="form-group">
-                    <label for="Textarea" class="sr-only"></label>
-                    <textarea class="form-control" id="message" placeholder="Type your message here" rows="5"></textarea>
-                </div>
-                
-            </form>
-         <!-- ...Contact US Form -->
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="submit" class="btn btn-primary" id="submitContactUs">Submit</button>
-        </div>
-      </div>
-    </div>
-  </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script src="script.js"></script>
