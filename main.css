@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
+
 body, h1, h2{
     padding: 0;
     margin: 0;
@@ -26,7 +28,11 @@ body, h1, h2{
     background-color: black;
 }
 
-.banner1,.main-footer {
+.headerfont {
+    font-family: 'Roboto Slab', serif;
+}
+
+.banner1,.banner3,.main-footer {
     text-align: center;
     /* padding-top:60px; */
 }
@@ -65,8 +71,7 @@ body, h1, h2{
     justify-content: center;
     flex-direction: column;
     line-height: 1.8;
-    background-size: cover;
-    background: no-repeat center center fixed
+    color: white;
 }
 
 #menubanner {
@@ -74,9 +79,6 @@ body, h1, h2{
     margin:auto 10px;
     width: auto;
     height: 2000px;
-
-
-
 }
 
 .button {
@@ -87,11 +89,32 @@ body, h1, h2{
 }
 
 .main-footer {
-	background: #d9e4ea;
+	background-color:black;
 	padding: 2em 0;
-	margin-top: 30px;
+    margin-top: 30px;
+    color: white;
 }
- 
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+
+  #map {
+    width: 90%; 
+    height: 80%;
+  }
+
+  #address {
+    width: 90%;
+    height:80%;
+    text-align: left;
+  }
+
 
 
 
@@ -108,28 +131,9 @@ body, h1, h2{
 
 /*-------------------------------------- Media Queries-----------------------------------------------*/
 
-/* Target viewport sizes 576px*/
-
-@media (min-width: 320px) {
-
-    /* nav {
-        margin-top: 24px;
-      }
-  
-    nav li{
-      display: inline-block;
-      margin: 0 0.45em;
-    }
-
-    h2 {
-        margin-bottom: 1.5em;
-      } */
-
-}
-
 /* Target viewport sizes 768px and wider */
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
     .imgflex {
         display: flex;
         flex-direction: row;
@@ -138,12 +142,27 @@ body, h1, h2{
     }
 }
 
-/* Target viewport sizes 576px and wider */
+/* Target viewport sizes 1024px and wider */
 
-@media (min-width: 576px) {
-    .formflex{
+@media (min-width: 1024px) {
+    .banner3flex{
         display:flex;
-        width: auto;
-        
+        flex-direction: row;
+        justify-content: space-evenly;
     }
+/* 
+    .banner3iflex{
+        display:flex;
+        width: 45%;
+        height: 45%;
+        float: left;
+    }
+
+    .banner3iiflex {
+        display:flex;
+        width: 45%;
+        height: 45%;
+        float: right;
+        max-width: 45%;
+    } */
 }
