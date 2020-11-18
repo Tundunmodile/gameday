@@ -23,6 +23,12 @@ function validateText(val, min_length){
         return val;
     }
 }
+
+//validate form fields
+
+
+
+
 //submit contact us form
 $('#contactUs').on('click', '#submitContactUs', function(){
     var firstname = validateText($('#firstname').val(), 2);
@@ -38,7 +44,8 @@ $('#contactUs').on('click', '#submitContactUs', function(){
     alert(`${message.firstname}, we have recieved your submission and will contact you as soon as possible :).`);
 })
 
-//collapse navbar 
+
+//collapses the navbar after selection 
 $('.navbar-collapse a').click(function() {
     	$(".navbar-collapse").collapse('hide');	    
 });
