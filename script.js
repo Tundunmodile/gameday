@@ -37,3 +37,8 @@ $('#contactUs').on('click', '#submitContactUs', function(){
 
     alert(`${message.firstname}, we have recieved your submission and will contact you as soon as possible :).`);
 })
+
+//collapse navbar 
+$('.navbar-collapse a').click(function() {
+    	$(".navbar-collapse").collapse('hide');	    
+});
