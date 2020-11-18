@@ -8,9 +8,10 @@ margin: 0;
 line-height: 1.5;
 }
 
-header h1, h2 {
-    margin: 30px auto;
+h1, h2 {
+    margin: auto;
     text-align: center;
+    color: black
 }
 
 .menuitem {
@@ -39,7 +40,7 @@ header h1, h2 {
 .menucard {
     background: rgb(255, 255, 255);
     border-radius: 0.285em;
-    margin: 180px auto;
+    margin: auto;
     max-width: 800px;
     
     display: grid;
