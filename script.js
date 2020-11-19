@@ -7,45 +7,46 @@ function isEmail(email) {
   }
 
 function emailValidationResult(val){
-    if (!isEmail(val)){
-        alert("please enter a valid email address")
-    }
-    else{
+    if (isEmail(val)){
         return val;
     }
+    else{
+        return null;
+    }
+
 }
 
+//ensure minimum input of at least 2 characters in form fields
 function validateText(val, min_length){
     if(val.length <= min_length){
-        alert('Please enter a valid field')
+        return null;
     }
     else{
         return val;
     }
 }
-
-//validate form fields
-
-
-
 
 //submit contact us form
 $('#contactUs').on('click', '#submitContactUs', function(){
     var firstname = validateText($('#firstname').val(), 2);
     var lastname = validateText($('#lastname').val(), 2);
-    var email = emailValidationResult($('#email').val());
+    var email = emailValidationResult($('#Email').val());
     var messageVal = validateText($('#message').val(), 5);
-
-    var message = {firstname, lastname, email, messageVal};
-    console.log(message);
-    messages.push(message);
-    console.log(messages);
-
-    alert(`${message.firstname}, we have recieved your submission and will contact you as soon as possible :).`);
+ 
+    if(firstname && lastname && email && messageVal){
+        var message = {firstname, lastname, email, messageVal};
+        alert(`${message.firstname}, we have recieved your submission and will contact you as soon as possible :).`);
+        
+        //clears form after submission
+        $('#firstname').val("");
+        $('#lastname').val("");
+        $('#Email').val("");
+        $('#message').val("");
+        $('#contactUs').modal('hide');
+    }
+    else{ 
+        alert("All fields must be completed");
+    }
+    
 })
 
-
-//collapses the navbar after selection 
-$('.navbar-collapse a').click(function() {
-    	$(".navbar-collapse").collapse('hide');	    
-});
