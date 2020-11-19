@@ -13,4 +13,4 @@ Javascript Features list:
 2.) hides the contact us form on page after user clicks submit and clears the form fields for new entry
 
 Any special instruction required to run project:
-Scroll down to contact us button at the bottom of the home page then input values into provided form fields. 
+Scroll down to the bottom of the home page till you see the "contact us" button. Click on it to open the form then input values into provided form fields and click on "submit"
